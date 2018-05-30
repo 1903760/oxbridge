@@ -1,0 +1,380 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}ШКОЛА АНГЛИЙСКОГО ЯЗЫКА OXBRIDGE{% endblock %}
+{% block description %}ШКОЛА АНГЛИЙСКОГО ЯЗЫКА OXBRIDGE{% endblock %}
+{% block author %}OXBRIDGE{% endblock %}
+{% load thumbnail %}
+{% block content %}
+
+    <div class="section full-height-2 over-hide">
+		<div class="parallax" style="background-image: url('{% static 'img/parallax-hero-app.jpg' %}')"></div>
+		<div class="grey-fade-over"></div>
+		<div class="hero-center-wrap move-top-on-mob z-bigger">
+			<div class="container parallax-fade-top">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="quote-box-2 text-right">
+							<h4 class="color-white">ШКОЛА АНГЛИЙСКОГО ЯЗЫКА</h4>
+							<p class="mt-5 text-white">Путешествуйте, работайте, развлекайтесь, учитесь, живите с английским!</p>
+							<a href="#download" class="btn btn-primary btn-simple btn-round btn-prim btn-long m-3 scroll" >Начать учиться</a>
+						</div>
+					</div>
+					<div class="col-lg-5 pb-5">
+						<button data-toggle="modal" data-target="#Modal-video" type="button" class="video-button on-dark float-right float-lg-left ml-4 mt-4"><i class="fa fa-play"></i></button>
+					</div>
+					<div class="col-md-12 col-12 app-hero-text text-center pt-5" href="#stady">
+						<h1 class="pt-5">КАК НАЧАТЬ УЧИТЬСЯ</h1>
+						<h5><i class="funky-ui-icon icon-Down text-white f-size"></i></h5>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal With Video
+	================================================== -->
+
+	<div class="modal fade default search-modal" id="Modal-video" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header justify-content-end">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="hero-center-wrap move-top">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-md-8">
+									<div class="video-section">
+										<figure class="vimeo rounded-2 over-hide">
+											<a href="https://player.vimeo.com/video/219627581">
+												<img src="{% static 'img/video-4.jpg' %}" alt="oxbridge" class="rounded-2 over-hide" />
+											</a>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<!-- Services Block
+================================================== -->
+	<div class="section pt-5 pt-md-0 pb-5 pb-md-0 background-grey z-bigger-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 transform-y-120">
+					<div class="services-box-1 background-white drop-shadow text-center">
+						<i class="funky-ui-icon icon-Monitor-2 text-black"></i>
+						<a href="#" class="btn-link btn-primary">
+							<h5 class="mt-3 btn-link btn-primary">Пройдите <br>вводный урок</h5>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 transform-y-120 mt-4 mt-md-0">
+					<div class="services-box-1 background-white drop-shadow text-center">
+						<i class="funky-ui-icon icon-Conference text-black"></i>
+						<a href="#" class="btn-link btn-primary">
+							<h5 class="mt-3 btn-link btn-primary">Занимайтесь c<br>преподавателем</h5>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 transform-y-120 mt-4 mt-md-0">
+					<div class="services-box-1 background-white drop-shadow text-center">
+						<i class="funky-ui-icon icon-Pencil text-black"></i>
+						<a href="#" class="btn-link btn-primary">
+							<h5 class="mt-3 btn-link btn-primary">Тренируйтесь <br>самостоятельно</h5>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 transform-y-120 mt-4 mt-md-0">
+					<div class="services-box-1 background-white drop-shadow text-center">
+						<i class="funky-ui-icon icon-Student-Hat text-black"></i>
+						<a href="#" class="btn-link btn-primary">
+							<h5 class="mt-3 btn-link btn-primary">Достигайте <br> целей</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section pt-5 pt-md-0 pb-2 pb-md-0 background-grey z-bigger-2" id="stady">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-8">
+					<div class="main-title text-center">
+						<h3>ПРОЙДИТЕ БЕСПЛАТНЫЙ ВВОДНЫЙ УРОК</h3>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="col-md-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+					<div class="services-box-1 text-center drop-shadow-1">
+						<i class="funky-ui-icon icon-Idea-3"></i>
+						<h5 class="mt-3">Сформулируем <br> цели</h5>
+					</div>
+				</div>
+
+				<a href="{% url 'orders:test' 'test-uroven'%}" class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+					<div class="services-box-1 text-center drop-shadow-1">
+						<i class="funky-ui-icon icon-Statistic"></i>
+						<h5 class="mt-3">Определим <br> уровень знаний</h5>
+					</div>
+				</a>
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+					<div class="services-box-1 text-center drop-shadow-1">
+						<i class="funky-ui-icon icon-Support"></i>
+						<h5 class="mt-3">Расскажем про учебную программу</h5>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<form method="post" id="form" class="row justify-content-center pb-5">
+                {% csrf_token %}
+                <div class="col-sm-6 col-lg-3">
+                    <div class="form-group">
+                        <input type="text" value="" name="name" id="name" placeholder="Ваше имя *" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="form-group">
+                        <input type="email" value="" name="email" id="email" placeholder="Email *" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="form-group">
+                        <input type="text" value="" name="tel" id="tel" placeholder="Тел *" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-simple btn-round btn-block" id="sendcontact" type="submit">Оставить заявку</button>
+                    </div>
+                </div>
+			</form>
+		</div>
+	</div>
+
+		<!-- Teacher Block
+================================================== -->
+	<div class="section pt-5 pt-md-0 pb-5 pb-md-0 background-Blue z-bigger-2">
+		<div class="container ">
+			<div class="row">
+				<div class="col-md-6 col-12 pt-5">
+					<div class="main-title text-left pt-3">
+						<h3>ЗАНИМАЙТЕСЬ С ПРЕПОДАВАТЕЛЕМ</h3>
+					</div>
+					<div class="container text-black pb-5">
+						<div class="row">
+							<div class="col-md-6 col-12">
+								<i class="funky-ui-icon icon-Professor pr-2" style="font-size: 50px"></i>
+								У нас только сертифицированные педагоги
+							</div>
+							<div class="col-md-6 col-12">
+								<i class="funky-ui-icon icon-Watch pr-2" style="font-size: 50px"></i>
+								Вы сами выбираете удобное расписание
+							</div>
+							<div class="col-md-6 col-12 pt-2">
+								<i class="funky-ui-icon icon-Happy pr-2" style="font-size: 50px"></i>
+								Каждый преподаватель мотивирует и следит за прогрессом
+							</div>
+						</div>
+					</div>
+					<div class="main-title text-left pt-3">
+						<p class="text-black f-size">Поможем преодолеть языковой барьер</p>
+					</div>
+				</div>
+					<div class="b-ff-index-teacher__maxim"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Traning Block
+================================================== -->
+
+	<div class="section padding-top-bottom background-white">
+		<div class="big-fade-title on-light text-center">ТРЕНИРУЙТЕСЬ</div>
+		<div class="container z-bigger">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="main-title text-center">
+						<h3>ТРЕНИРУЙТЕСЬ САМОСТОЯТЕЛЬНО</h3>
+						<div class="main-subtitle-bottom mt-3">Мы автоматизировали домашние задания и тренировки основных навыков,
+чтобы вы не тратили время урока на рутину.</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="grid-wraper clearfix">
+                    {% for post in posts %}
+					<div class="grid-box float-inline half with-margin branding">
+
+						<a href="#">
+							<div class="portfolio-box-1 rounded">
+								<img  src="{{ post.img.post.url }}" alt="{{ post.name }}" />
+								<div class="portfolio-mask-3 rounded"></div>
+								<h5 class="on-center text-center pb-5">{{ post.name }}</h5>
+                                <p class="on-center text-center p-5 pt-5">{{ post.description }}</p>
+							</div>
+						</a>
+					</div>
+                     {% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Call To Action Block
+	================================================== -->
+
+	<div class="section padding-top-bottom over-hide">
+		<div class="parallax-1" style="background-image: url('{% static 'img/parallax-2.jpg' %}')"></div>
+		<div class="grey-fade-over"></div>
+		<div class="container z-bigger">
+			<form type="post" id="form1" class="row justify-content-center">
+                {% csrf_token %}
+				<div class="col-12 col-md-12 col-lg-12 text-center">
+					<i class="funky-ui-icon icon-Student-Hat2 f-size1 icon-main"></i>
+					<h5 class="text-white pb-5 ">Первый шаг к цели — бесплатный вводный урок</h5>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<div class="form-group">
+						<input type="text" value="" id="name" name="name" placeholder="Ваше имя *" class="form-control form-control1">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<div class="form-group">
+						<input type="email" value="" id="email" name="email" placeholder="Email *" class="form-control form-control1">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<div class="form-group">
+						<input type="text" value="" id="tel"  name="tel" placeholder="Тел *" class="form-control form-control1">
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 col-lg-3">
+					<div class="form-group">
+						<button class="btn btn-primary btn-simple btn-round btn-prim btn-long" id="sendcontact1" type="submit">Оставить заявку</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<!-- Testimonials Block
+	================================================== -->
+	<div class="section padding-top-bottom background-grey over-hide">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-8">
+					<div class="main-title text-center">
+						<h3>НАШИ УЧЕНИКИ ДОСТИГЛИ СВОИХ ЦЕЛЕЙ С АНГЛИЙСКИМ</h3>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="team-slider-wrap">
+					<div id="owl-team-1" class="owl-carousel owl-theme">
+                        {% for review in reviews %}
+						<div class="item">
+							<div class="team-box-1 all-padding background-white drop-shadow text-center image-over-box mt-5">
+								<img src="{{ review.img.avatar.url }}" alt="" class="img-raised" />
+								<h6 class="mb-1">{{ review.name }}</h6>
+								{{ review.text }}
+								<ul class="team-social mt-4">
+									<li class="facebook">
+										<a href="{{ review.fs }}">Fs</a>
+									</li>
+									<li class="google">
+										<a href="{{ review.inst }}">Inst</a>
+									</li>
+                                    <li class="vimeo">
+										<a href="{{ review.vk }}">Vk</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+                        {% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript" src="{% static 'js/custom/custom-company.js' %}"></script>
+<script type="text/javascript">
+$("#sendcontact").click(function (event) {
+    event.preventDefault();
+    $.ajax({
+    type: "POST",
+     url: '',
+     data: $("#form").serialize(),
+     success: function (data) {
+{#        $("#form").html(data);#}
+         // Вывод текста результата отправки
+         if(data["ok"]){
+             $("#exampleModalLabel").text('Заявку успешно отправлено!');
+             $("#exampleModal").modal('show')
+         }
+         else {
+             $("#exampleModalLabel").text('Упс ошибка! Повторите еще раз');
+             $("#exampleModal").modal('show')
+         }
+     }
+     });
+});
+$("#sendcontact1").click(function (event) {
+    event.preventDefault();
+    $.ajax({
+    type: "POST",
+     url: '',
+     data: $("#form1").serialize(),
+     success: function (data) {
+{#        $("#form").html(data);#}
+         // Вывод текста результата отправки
+         if(data["ok"]){
+             $("#exampleModalLabel").text('Заявку успешно отправлено!');
+             $("#exampleModal").modal('show')
+         }
+         else {
+             $("#exampleModalLabel").text('Упс ошибка! Повторите еще раз');
+             $("#exampleModal").modal('show')
+         }
+     }
+     });
+});
+
+</script>
+{% endblock %}
