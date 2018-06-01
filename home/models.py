@@ -85,3 +85,35 @@ class PostStudy(models.Model):
     def __str__(self):
         return '{}'.format(self.name)
 
+
+class CourseHome(models.Model):
+    name = models.CharField(verbose_name='название курса', default=None, max_length=50, blank=True)
+    description = models.CharField(verbose_name='описание', default=None, max_length=50, blank=True)
+    price = models.CharField(verbose_name='цена за курс', help_text='с пробелом', max_length=20, default=None, blank=True)
+    all_time = models.CharField(verbose_name='Общее время курса', default=None, max_length=50, blank=True)
+    icons = models.CharField(verbose_name='иконка', default=None, max_length=20, blank=True)
+
+    class Meta:
+        verbose_name_plural = 'Прайс курсов'
+        verbose_name = 'Курс'
+        ordering = ['name']
+
+    def __str__(self):
+        return '{}'.format(self.name)
+
+    @cached_property
+    def conditions(self):
+        return self.conditionscoursehome_set.all()
+
+
+class ConditionsCourseHome(models.Model):
+    conditions = models.CharField(verbose_name='Условие', default=None, max_length=50, blank=True)
+    course = models.ForeignKey(CourseHome, verbose_name='курс', on_delete=models.CASCADE, blank=True)
+
+    class Meta:
+        verbose_name_plural = 'Прайс курсов'
+        verbose_name = 'Курс'
+        ordering = ['id']
+
+    def __str__(self):
+        return '{}'.format(self.conditions)

@@ -1,5 +1,5 @@
 from django.views.generic.base import TemplateView
-from .models import Review, PostStudy, Test
+from .models import Review, PostStudy, Test, CourseHome
 from .forms import ContactForm
 from django.core.mail import send_mail
 from oxbridge import settings
@@ -22,11 +22,13 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['reviews'] = Review.objects.all()
         context['posts'] = PostStudy.objects.all()
+        context['prices'] = CourseHome.objects.all()
         return context
 
     def post(self, request, *args, **kwargs):
         print(request.POST)
         form = ContactForm(request.POST)
+        data = {}
         if form.is_valid():
             email_subject = 'OXBRIDGE.KZ :: Сообщение через контактную форму '
             email_body = "С сайта отправлено новое сообщение\n\n" \
@@ -35,13 +37,15 @@ class HomeView(TemplateView):
                          "Сообщение: \n" \
                          "%s " % \
                          (form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['tel'])
-            # send_mail(email_subject, email_body, settings.EMAIL_HOST_USER, ['target_email@example.com'],
-            #           fail_silently=False)
-            data = {}
-            data['ok'] = 'Ваша заявка успешно отправллено!'
-            return JsonResponse(data)
+            if True:
+                send_mail(email_subject, email_body, settings.EMAIL_HOST_USER, ['info@oxbridge.kz'],
+                          fail_silently=False)
+                data['ok'] = 'Ваша заявка успешно отправллено!'
+                return JsonResponse(data)
+            else:
+                data['no'] = 'Упс ошибка'
+                return JsonResponse(data)
         else:
-            data = {}
             data['no'] = 'Упс ошибка'
             return JsonResponse(data)
 
@@ -49,6 +53,7 @@ class HomeView(TemplateView):
 @require_http_methods(["POST"])
 def send_contact(request):
     form = ContactForm(request.POST)
+    data = {}
     if form.is_valid():
         email_subject = 'OXBRIDGE.KZ :: Сообщение через контактную форму '
         email_body = "С сайта отправлено новое сообщение\n\n" \
@@ -57,8 +62,13 @@ def send_contact(request):
                      "Сообщение: \n" \
                      "%s " % \
                      (form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['tel'])
-        # send_mail(email_subject, email_body, settings.EMAIL_HOST_USER, ['target_email@example.com'],
-        #           fail_silently=False)
-        return JsonResponse()
+        if True:
+            send_mail(email_subject, email_body, settings.EMAIL_HOST_USER, ['info@oxbridge.kz'],
+                      fail_silently=False)
+            data['ok'] = 'Ваша заявка успешно отправллено!'
+            return JsonResponse(data)
+        else:
+            data['no'] = 'Упс ошибка'
+            return JsonResponse(data)
     else:
         return JsonResponse('no', content_type='text/html')

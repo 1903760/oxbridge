@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}ШКОЛА АНГЛИЙСКОГО ЯЗЫКА OXBRIDGE{% endblock %}
-{% block description %}ШКОЛА АНГЛИЙСКОГО ЯЗЫКА OXBRIDGE{% endblock %}
+{% block title %}Школа английского языка OXBRIDGE - с индивидуальным подходом каждому учащемуся{% endblock %}
+{% block description %}Изучайте английский с преподавателем в школе OXBRIDGE. Достигайте целей с английским. Начните с бесплатного вводного урока!{% endblock %}
 {% block author %}OXBRIDGE{% endblock %}
 {% load thumbnail %}
 {% block content %}
@@ -277,7 +277,7 @@
 
 	<!-- Testimonials Block
 	================================================== -->
-	<div class="section padding-top-bottom background-grey over-hide">
+	<div class="section padding-top pb-3 background-grey over-hide">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-8">
@@ -313,6 +313,57 @@
 			</div>
 		</div>
     </div>
+
+
+
+    <!-- Pricing Block
+	================================================== -->
+
+
+	<div class="section padding-bottom background-Blue over-hide">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 pt-5">
+					<div class="main-title text-center pt-5">
+						<h3>Add your creation to relevant collections.</h3>
+						<div class="main-subtitle-bottom mt-3">you inspired me</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="blog-slider-wrap mb-4" data-scroll-reveal="enter bottom move 40px over 0.8s after 0.2s">
+					<div class="customNavigation">
+						<a class="prev-blog1"><i class="fa fa-angle-left"></i></a>
+						<a class="next-blog1"><i class="fa fa-angle-right"></i></a>
+					</div>
+					<div id="owl-blog1" class="owl-carousel owl-theme">
+                        {% for price in prices %}
+						<div class="item">
+							<div class="blog-box-1 background-white drop-shadow pricing p-xl-5 text-center ">
+                                <div class="ribbon"><i class="funky-ui-icon icon-{{ price.icons }}"></i></div>
+                                <h5>{{ price.name }}</h5>
+                                <div class="pricing-sub mb-4">{{ price.description }}</div>
+                                <div class="pricing-price1 mt-3"><sup>₸</sup>{{ price.price }}</div>
+                                <div class="pricing-per mt-2">{{ price.all_time }}</div>
+                                <div class="pricing-line mt-4"></div>
+                                <ul class="list-style mt-4">
+                                    {% for condition in price.conditions %}
+                                    <li><i class="fa fa-check"></i>{{ condition.conditions }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <a href="#stady" class="btn btn-primary btn-simple btn-round btn-long">Оставить заявку</a>
+
+							</div>
+						</div>
+                        {% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -329,11 +380,13 @@
       </div>
     </div>
 
+
 {% endblock %}
 
 
 {% block script %}
-<script type="text/javascript" src="{% static 'js/custom/custom-company.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/custom/custom-company.js' %}"></script>
+
 <script type="text/javascript">
 $("#sendcontact").click(function (event) {
     event.preventDefault();

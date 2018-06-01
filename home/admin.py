@@ -19,6 +19,17 @@ class AnswerInline(admin.TabularInline):
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
     inlines = [AnswerInline]
+
+
+class ConditionsCourseHomeInline(admin.TabularInline):
+    model = ConditionsCourseHome
+
+
+@admin.register(CourseHome)
+class CourseHomeAdmin(admin.ModelAdmin):
+    inlines = [ConditionsCourseHomeInline]
+
+
 # Register your models here.
 admin.site.register(Review)
 admin.site.register(PostStudy)

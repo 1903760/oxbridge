@@ -16,6 +16,7 @@
 .counter-wrap p,
 .dropcap.primary,
 .pricing-price,
+.pricing-price1,
 .pricing .ribbon i,
 .typed-cursor,
 .typed i,
@@ -88,6 +89,8 @@ mark,
 .filter li a:before,
 .next-blog,
 .prev-blog,
+.next-blog1,
+.prev-blog1,
 .call-box-2 .btn-link:before,
 #owl-team.owl-theme .owl-controls .owl-page.active span,
 #owl-team.owl-theme .owl-controls .owl-page span:hover,
@@ -301,7 +304,7 @@ figure.vimeo:hover a:after, figure.youtube:hover a:after {
 
 @media only screen and (min-width: 1280px){
     .b-ff-index-teacher__maxim {
-        background-image: url('../../img/engl/woman.png');
+        background-image: url('../../img/engl/igor.png');
         right: 0;
         background-position: 50px 100%;
     }
@@ -313,7 +316,7 @@ figure.vimeo:hover a:after, figure.youtube:hover a:after {
 }
 @media only screen and (min-width: 480px){
     .b-ff-index-teacher__maxim {
-        background-image: url('../../img/engl/woman.png');
+        background-image: url('../../img/engl/igor.png');
         background-position: 200px 100%;
     }
 }

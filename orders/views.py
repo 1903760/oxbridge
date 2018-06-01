@@ -4,6 +4,8 @@ from home.models import Answer, Test
 from orders.models import ScoringScale
 from django.http import JsonResponse
 from .forms import OrderForm
+from django.core.mail import send_mail
+from oxbridge import settings
 import bisect
 
 
@@ -16,6 +18,7 @@ class OrderView(DetailView):
     def post(self, request, *args, **kwargs):
         sum_test = 0
         ball = dict(request.POST)
+        data = {}
         order_form = {}
         order_form['name'] = request.POST['name']
         order_form['phone'] = request.POST['tel']
@@ -32,6 +35,16 @@ class OrderView(DetailView):
         form = OrderForm(order_form)
         if form.is_valid():
             form.save()
-        data = {}
-        data['ok'] = 'Вы набрали {} балла. Ваш уровень {}! В ближайшее время с вами свяжуться'.format(sum_test, level)
+            email_subject = 'OXBRIDGE.KZ :: Сообщение по пройденому тесту'
+            email_body = "С сайта отправлено новое сообщение\n\n" \
+                         "Имя отправителя: %s \n" \
+                         "Уровень: %s \n\n" \
+                         "Сообщение: \n" \
+                         "%s " % \
+                         (order_form['name'], level, order_form['phone'])
+            send_mail(email_subject, email_body, settings.EMAIL_HOST_USER, ['info@oxbridge.kz'], fail_silently=False)
+            data['ok'] = 'Вы набрали {} балла. Ваш уровень {}! В ближайшее время с вами свяжуться'.format(sum_test, level)
+        else:
+            data['no'] = 'Упс ошибка'
+            return JsonResponse(data)
         return JsonResponse(data)
