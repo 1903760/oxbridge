@@ -58,8 +58,23 @@
 	<script type="text/javascript" src="{% static 'js/tether.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.maskedinput.min.js' %}"></script>
+     <script type="text/javascript">
+        //1 пример
+        $(function(){
+          $("#tel").mask("+7(999) 999-99-99");
+        });
+        $(function(){
+          $(".phone1").mask("+7(999) 999-99-99");
+        });
+    </script>
     {% block script %} {% endblock %}
     <script type="text/javascript">
+        //1 пример
+        $(function(){
+          $("#phone1").mask("+7(999) 999-99-99");
+        });
+
         $(function () { // Когда страница загрузится
             $('.navbar-nav a').each(function () { // получаем все нужные нам ссылки
                 var location = window.location.href; // получаем адрес страницы

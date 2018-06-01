@@ -157,7 +157,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="form-group">
-                        <input type="text" value="" name="tel" id="tel" placeholder="Тел *" class="form-control">
+                        <input id='tel' type="text" value="" name="tel" placeholder="Тел *" class="form-control">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
@@ -244,7 +244,7 @@
 		<div class="parallax-1" style="background-image: url('{% static 'img/parallax-2.jpg' %}')"></div>
 		<div class="grey-fade-over"></div>
 		<div class="container z-bigger">
-			<form type="post" id="form1" class="row justify-content-center">
+			<form type="post" id="form1" class="row justify-content-center text-center">
                 {% csrf_token %}
 				<div class="col-12 col-md-12 col-lg-12 text-center">
 					<i class="funky-ui-icon icon-Student-Hat2 f-size1 icon-main"></i>
@@ -262,7 +262,7 @@
 				</div>
 				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="form-group">
-						<input type="text" value="" id="tel"  name="tel" placeholder="Тел *" class="form-control form-control1">
+						<input type="text" value="" id="tel"  name="tel" placeholder="Тел *" class="form-control form-control1 phone1">
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 col-lg-3">
@@ -386,6 +386,7 @@
 
 {% block script %}
     <script type="text/javascript" src="{% static 'js/custom/custom-company.js' %}"></script>
+
 
 <script type="text/javascript">
 $("#sendcontact").click(function (event) {
