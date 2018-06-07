@@ -67,7 +67,90 @@
 			jQuery('html, body').animate({scrollTop: 0}, duration);
 			return false;
 		})
-		
+
+		//Home Carousel
+
+		  var sync1 = $("#hero-sync1");
+		  var sync2 = $("#hero-sync2");
+
+		  sync1.owlCarousel({
+			singleItem : true,
+			slideSpeed : 400,
+			transitionStyle : "goDown",
+			pagination:false,
+			autoPlay : 6000,
+			afterAction : syncPosition
+		  });
+		(function ($) {
+			var owl = $("#hero-sync1");
+			owl.owlCarousel();
+
+			// Custom Navigation Events
+			$(".next-hero-sync-1").click(function(){
+				owl.trigger('owl.next');
+			})
+			$(".prev-hero-sync-1").click(function(){
+				owl.trigger('owl.prev');
+			})
+		} )(jQuery);
+
+		  sync2.owlCarousel({
+			items : 3,
+			itemsDesktop      : [1199,3],
+			itemsDesktopSmall     : [979,0],
+			itemsTablet       : [768,0],
+			itemsMobile       : [479,0],
+			pagination:false,
+			responsiveRefreshRate : 100,
+			afterInit : function(el){
+			  el.find(".owl-item").eq(0).addClass("synced");
+			}
+		  });
+
+		  function syncPosition(el){
+			var current = this.currentItem;
+			$("#hero-sync2")
+			  .find(".owl-item")
+			  .removeClass("synced")
+			  .eq(current)
+			  .addClass("synced")
+			if($("#hero-sync2").data("owlCarousel") !== undefined){
+			  center(current)
+			}
+		  }
+
+		  $("#hero-sync2").on("click", ".owl-item", function(e){
+			e.preventDefault();
+			var number = $(this).data("owlItem");
+			sync1.trigger("owl.goTo",number);
+		  });
+
+		  function center(number){
+			var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+			var num = number;
+			var found = false;
+			for(var i in sync2visible){
+			  if(num === sync2visible[i]){
+				var found = true;
+			  }
+			}
+
+			if(found===false){
+			  if(num>sync2visible[sync2visible.length-1]){
+				sync2.trigger("owl.goTo", num - sync2visible.length+2)
+			  }else{
+				if(num - 1 === -1){
+				  num = 0;
+				}
+				sync2.trigger("owl.goTo", num);
+			  }
+			} else if(num === sync2visible[sync2visible.length-1]){
+			  sync2.trigger("owl.goTo", sync2visible[1])
+			} else if(num === sync2visible[0]){
+			  sync2.trigger("owl.goTo", num-1)
+			}
+
+		  }
 		
 		//Parallax
 		

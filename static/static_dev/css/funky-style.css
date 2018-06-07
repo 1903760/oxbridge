@@ -3,7 +3,7 @@
 ================================================== */
 
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: .87rem;
 	line-height: 1.75;
@@ -12,7 +12,7 @@ body{
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	margin-bottom: 0.6rem;
 	line-height: 1.25;
@@ -477,7 +477,7 @@ body.royal_preloader {
 	border: 2px solid rgba(239, 109, 126, 1);
 }
 .btn {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.25;
 	padding: 0.8rem 1.4rem;
 	font-size: .8rem;
@@ -714,95 +714,95 @@ body.royal_preloader {
 	font-style: italic;
 	margin-bottom: 3rem;
 }
-.form-control {
-	font-family: 'Poppins', sans-serif;
-	font-weight:400;
-	padding: 0.8rem 0.75rem;
-	font-size: .8rem;
-	line-height: 1.25;
-	color: #3075f3;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-	border-radius: 0;
-}
-.form-control::-ms-expand {
-	background-color: transparent;
-	border: 0;
-}
-.form-control:active,
-.form-control:focus {
-	background-color: transparent;
-	outline: none;
-}
-.form-control::-webkit-input-placeholder {
-	color: #fff;
-	opacity: 1;
-}
-.form-control::-moz-placeholder {
-	color: #fff;
-	opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-	color: #fff;
-	opacity: 1;
-}
-.form-control::placeholder {
-	color: #000000;
-	opacity: 1;
-}
+/*.form-control {*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-weight:400;*/
+	/*padding: 0.8rem 0.75rem;*/
+	/*font-size: .8rem;*/
+	/*line-height: 1.25;*/
+	/*color: #3075f3;*/
+	/*background-color: transparent;*/
+	/*border: none;*/
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.15);*/
+	/*border-radius: 0;*/
+/*}*/
+/*.form-control::-ms-expand {*/
+	/*background-color: transparent;*/
+	/*border: 0;*/
+/*}*/
+/*.form-control:active,*/
+/*.form-control:focus {*/
+	/*background-color: transparent;*/
+	/*outline: none;*/
+/*}*/
+/*.form-control::-webkit-input-placeholder {*/
+	/*color: #fff;*/
+	/*opacity: 1;*/
+/*}*/
+/*.form-control::-moz-placeholder {*/
+	/*color: #fff;*/
+	/*opacity: 1;*/
+/*}*/
+/*.form-control:-ms-input-placeholder {*/
+	/*color: #fff;*/
+	/*opacity: 1;*/
+/*}*/
+/*.form-control::placeholder {*/
+	/*color: #000000;*/
+	/*opacity: 1;*/
+/*}*/
 
-.form-control1::placeholder {
-	color: #fff !important;
-	opacity: 1;
-}
+/*.form-control1::placeholder {*/
+	/*color: #fff !important;*/
+	/*opacity: 1;*/
+/*}*/
 
-.form-control.form-control-success {
-	color: rgba(92, 229, 170, 1);
-}
-.form-control.form-control-success,
-.form-control.form-control-success:active,
-.form-control.form-control-success:focus{
-	border-color: rgba(92, 229, 170, 1);
-}
-.form-control.form-control-success::-webkit-input-placeholder{
-	color: rgba(92, 229, 170, 1);
-}
-.form-control.form-control-success::-moz-placeholder{
-	color: rgba(92, 229, 170, 1);
-}
-.form-control.form-control-success:-ms-input-placeholder{
-	color: rgba(92, 229, 170, 1);
-}
-.form-control.form-control-success::placeholder{
-	color: rgba(92, 229, 170, 1);
-}
-.has-success .form-control-success {
-	background-image: url("../img/yes.svg");
-}
-.form-control.form-control-danger {
-	color: rgba(239, 109, 126, 1);
-}
-.form-control.form-control-danger,
-.form-control.form-control-danger:active,
-.form-control.form-control-danger:focus{
-	border-color: rgba(239, 109, 126, 1);
-}
-.form-control.form-control-danger::-webkit-input-placeholder{
-	color: rgba(239, 109, 126, 1);
-}
-.form-control.form-control-danger::-moz-placeholder{
-	color: rgba(239, 109, 126, 1);
-}
-.form-control.form-control-danger:-ms-input-placeholder{
-	color: rgba(239, 109, 126, 1);
-}
-.form-control.form-control-danger::placeholder{
-	color: rgba(239, 109, 126, 1);
-}
-.has-danger .form-control-danger {
-	background-image: url("../img/close.svg");
-}
+/*.form-control.form-control-success {*/
+	/*color: rgba(92, 229, 170, 1);*/
+/*}*/
+/*.form-control.form-control-success,*/
+/*.form-control.form-control-success:active,*/
+/*.form-control.form-control-success:focus{*/
+	/*border-color: rgba(92, 229, 170, 1);*/
+/*}*/
+/*.form-control.form-control-success::-webkit-input-placeholder{*/
+	/*color: rgba(92, 229, 170, 1);*/
+/*}*/
+/*.form-control.form-control-success::-moz-placeholder{*/
+	/*color: rgba(92, 229, 170, 1);*/
+/*}*/
+/*.form-control.form-control-success:-ms-input-placeholder{*/
+	/*color: rgba(92, 229, 170, 1);*/
+/*}*/
+/*.form-control.form-control-success::placeholder{*/
+	/*color: rgba(92, 229, 170, 1);*/
+/*}*/
+/*.has-success .form-control-success {*/
+	/*background-image: url("../img/yes.svg");*/
+/*}*/
+/*.form-control.form-control-danger {*/
+	/*color: rgba(239, 109, 126, 1);*/
+/*}*/
+/*.form-control.form-control-danger,*/
+/*.form-control.form-control-danger:active,*/
+/*.form-control.form-control-danger:focus{*/
+	/*border-color: rgba(239, 109, 126, 1);*/
+/*}*/
+/*.form-control.form-control-danger::-webkit-input-placeholder{*/
+	/*color: rgba(239, 109, 126, 1);*/
+/*}*/
+/*.form-control.form-control-danger::-moz-placeholder{*/
+	/*color: rgba(239, 109, 126, 1);*/
+/*}*/
+/*.form-control.form-control-danger:-ms-input-placeholder{*/
+	/*color: rgba(239, 109, 126, 1);*/
+/*}*/
+/*.form-control.form-control-danger::placeholder{*/
+	/*color: rgba(239, 109, 126, 1);*/
+/*}*/
+/*.has-danger .form-control-danger {*/
+	/*background-image: url("../img/close.svg");*/
+/*}*/
 .input-group-addon {
 	padding: 0.5rem 0.75rem;
 	font-size: 1rem;
@@ -956,7 +956,7 @@ body.royal_preloader {
     border-left: .4em solid transparent;
 }
 .dropdown-menu .dropdown-header:not([href]):not([tabindex]) {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
     color: rgba(182, 182, 182, 0.7);
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -1096,12 +1096,12 @@ body.royal_preloader {
 	padding-top: .25rem;
 	padding-bottom: .25rem;
 	font-size: 1rem;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 }
 .navbar-inverse .navbar-nav .nav-link {
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: .75rem;
 	line-height: 1.2rem;
@@ -1119,9 +1119,9 @@ body.royal_preloader {
 }
 .navbar-light .navbar-nav .nav-link {
 	color: #000000;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:500;
-	font-size: .75rem;
+	font-size: .95rem;
 	line-height: 1.2rem;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
@@ -1443,7 +1443,7 @@ body.royal_preloader {
 	color: #777;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: .8rem;
 }
@@ -1460,7 +1460,7 @@ body.royal_preloader {
 	top:0;
 	right:15px;
 	letter-spacing: 1px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:300;
 	font-size: 0.8rem;
 }
@@ -1891,7 +1891,7 @@ body.royal_preloader {
     height: 100%;
     color: #fff;
 	letter-spacing: 1px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
     font-size: 10px;
     text-indent: -12px;
@@ -2280,7 +2280,7 @@ body.royal_preloader {
     border: none;
     background: transparent;
     color: #999;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: .7rem;
     padding: 1px;
@@ -2652,7 +2652,7 @@ figure.vimeo a img, figure.youtube a img {
 ================================================== */
 
 	.tipper { height: 1px; left: -99999px; position: absolute; pointer-events: none; top: -99999px; width: 1px;z-index:100000; }
-	.tipper .tipper-content { background: rgba(255, 255, 255, 0.95);font-weight:400;letter-spacing:1px;box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);border-radius: 3px; color: #000; display: block; float: left; font-family: 'Poppins', sans-serif; font-size: 13px; margin: 0; padding: 8px 20px; position: relative; white-space: nowrap; }
+	.tipper .tipper-content { background: rgba(255, 255, 255, 0.95);font-weight:400;letter-spacing:1px;box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);border-radius: 3px; color: #000; display: block; float: left; font-family: 'Open Sans', sans-serif; font-size: 13px; margin: 0; padding: 8px 20px; position: relative; white-space: nowrap; }
 	.tipper .tipper-caret { background: url('../img/tipper-icon.png') no-repeat; display: block; height: 11px;  position: absolute; width: 100%; }
 
 	.tipper.right .tipper-content {float: right; }
@@ -3074,7 +3074,7 @@ figure.vimeo a img, figure.youtube a img {
 	box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, .35);
 }
 .pricing-sub{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
     font-size: 0.65rem;
 	line-height: 0.95rem;
 	color: #b1b1b1;
@@ -3083,7 +3083,7 @@ figure.vimeo a img, figure.youtube a img {
 	letter-spacing: 3px;
 }
 .pricing-price{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
     font-size: 5.3rem;
 	line-height: 5.3rem;
 	font-weight: 100;
@@ -3097,7 +3097,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 
 .pricing-price1{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     line-height: 3.3rem;
 	font-weight: 100;
@@ -3111,7 +3111,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 
 .pricing-per{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
     font-size: 0.6rem;
 	line-height: 0.6rem;
 	color: #a9a9a9;
@@ -3507,7 +3507,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 #menu-wrap .navbar-brand img{
     display: block;
-	max-height: 52px;
+	max-height: 35px;
 	width: auto;
 	-webkit-transition : all 0.3s ease-out;
 	-moz-transition : all 0.3s ease-out;
@@ -4013,7 +4013,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 .nav-top-bar .nav-top-social li a{
 	position:relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: 0.75rem;
 	line-height: 1rem;
@@ -4516,7 +4516,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 
 .hero-bottom-wrap h2{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:600;
 	line-height: 0.6;
 	font-size: 36px;
@@ -4525,7 +4525,7 @@ figure.vimeo a img, figure.youtube a img {
 	margin-bottom: 0;
 }
 .hero-bottom-wrap.ver-2 h2{
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 0.82;
 }
 .hero-bottom-wrap.ver-3 h2{
@@ -4578,7 +4578,7 @@ figure.vimeo a img, figure.youtube a img {
 	background-color:rgba(255,255,255,.9);
 }
 .hero-text.big-text h1{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	padding-bottom:0;
 	text-transform: none;
 	font-weight:900;
@@ -4960,7 +4960,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 .hero-social li a{
 	position:relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:500;
 	font-size: 1.1rem;
 	line-height: 1.2rem;
@@ -5178,7 +5178,7 @@ figure.vimeo a img, figure.youtube a img {
 	width: 100%;
 }
 .call-box-4 h3{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:600;
 	font-size: 20px;
 	line-height: 1.25;
@@ -5272,7 +5272,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 .team-box-1 .team-social li a{
 	position:relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: 0.8rem;
 	line-height: 1rem;
@@ -5443,7 +5443,7 @@ figure.vimeo a img, figure.youtube a img {
 }
 .team-box-2 .team-social li a{
 	position:relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: 0.8rem;
 	line-height: 1rem;
@@ -6055,7 +6055,7 @@ figure.vimeo a img, figure.youtube a img {
 	width: 100%;
 }
 .testimonials-box-2 h5{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
 	line-height: 2.2rem;
 	font-weight: 500;
@@ -6091,7 +6091,7 @@ figure.vimeo a img, figure.youtube a img {
     box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.3);
 }
 .quote-box-1 h5{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
 	line-height: 2.2rem;
 	font-weight: 500;
@@ -6134,12 +6134,12 @@ figure.vimeo a img, figure.youtube a img {
 	line-height: 2rem;
 }
 .quote-box-2 h4{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
 	font-weight: 300;
 	letter-spacing: 1px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 .quote-box-2 p{
 	position: relative;
@@ -6148,7 +6148,7 @@ figure.vimeo a img, figure.youtube a img {
 	font-weight: 500;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	padding-right: 55px;
+	/*padding-right: 55px;*/
 }
 .quote-box-2 p:after{
 	position: absolute;
@@ -6177,7 +6177,7 @@ ul.countdown li {
 ul.countdown li span {
 	font-size: 5rem;
 	line-height: 5rem;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:100;
 }
 ul.countdown li.seperator {
@@ -6190,7 +6190,7 @@ ul.countdown li.seperator {
 	padding-right:10px;
 	color:#fff;
 	font-weight:400;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 ul.countdown li p {
 	color: #fff;
@@ -6713,7 +6713,7 @@ ul.countdown li p {
 	font-size: 18px;
 	line-height: 23px;
     font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	bottom: 70px;
 }
 .portfolio-box-1.border-in p{
@@ -6733,10 +6733,10 @@ ul.countdown li p {
 	text-transform: uppercase;
 	letter-spacing:2px;
     line-height: 20px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	margin-top: -25px;
-	color: #afafaf;
+	color: #000000;
 }
 .portfolio-box-1 h5.on-center{
 	bottom: auto;
@@ -6744,7 +6744,7 @@ ul.countdown li p {
 	font-size: 18px;
 	line-height: 23px;
     font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin-top: 3px;
 	color: #212121;
 }
@@ -6787,7 +6787,7 @@ ul.countdown li p {
 	margin-right:30px;
 	width:180px;
 	height:120px;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:700;
 	letter-spacing:2px;
 	text-align:right;
@@ -6813,7 +6813,7 @@ ul.countdown li p {
 	font-size: 50px;
 	line-height:160px;
     vertical-align: text-bottom;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:700;
 	letter-spacing:2px;
 	text-align:left;
@@ -6833,7 +6833,7 @@ ul.countdown li p {
 	z-index:2;
 	width:100%;
 	opacity:0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: 13px;
 	line-height:20px;
@@ -7220,7 +7220,7 @@ ul.countdown li p {
 }
 .post-social li a{
 	position:relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: 0.8rem;
 	line-height: 1rem;
@@ -7294,7 +7294,7 @@ ul.countdown li p {
 }
 .post-comm-box h6 small{
 	text-transform: none;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: .7rem;
 	font-style: italic;
@@ -7854,7 +7854,7 @@ input[type=number]::-webkit-outer-spin-button{
 }
 .footer-1 .footer-social li a{
 	position:relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	font-size: 0.8rem;
 	line-height: 1rem;
@@ -8060,7 +8060,8 @@ h6, .h6 {
 	margin-top: 0;
 }
 .full-height {
-	height:calc(100vh - 68px);
+    height: auto;
+	min-height:calc(100vh - 68px);
 }
 .padding-top-1st {
 	padding-top:120px;

@@ -105,7 +105,7 @@ mark,
 .btn-primary.btn-simple.btn-prim,
 #hero-sync2 .item h5 span:before,
 .corporate-hero-text p:before,
-.quote-box-2 p:after,
+/*.quote-box-2 p:after,*/
 .filter-plus:hover,
 .blog-box-1 .blog-quote-wrap h5:before,
 .shop-box-1 .sale,
@@ -334,10 +334,47 @@ figure.vimeo:hover a:after, figure.youtube:hover a:after {
 }
 
 
+.full-height-33 {
+    height: calc(177vh - 100px) !important;
+}
+
+.btn-down_w{
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    -webkit-animation: btn-down 1s infinite;
+    animation: btn-down 2s infinite;
+
+}
 
 
+.navbar .nav-item.icons-item-menu .link-me{
+    padding: 0em 0.07em !important;
+}
+
+.f-size-icon1{
+    font-size: 24px !important;
+}
 
 
+@media (max-width: 576px){
+    #maps{
+        display: none;
+    }
+    .maps{
+        display: none;
+    }
+    .i_img_home{
+        padding-top: 60px!important;
+        width: 90px;
+        height: auto;
+        padding-bottom: 10px !important;
+    }
+}
 
-
-
+@media (min-width: 700px){
+    .i_img_home{
+        height: auto !important;
+        width: 400px !important;
+    }
+}
